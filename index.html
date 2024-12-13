@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File and Device Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="file-upload-container">
+    <input type="file" id="fileUpload" multiple>
+    <div id="imagePreview" class="image-preview"></div>
+  </div>
+
+  <div class="drop-area" id="dropArea">Drop files here</div>
+
+  <div class="location-container">
+    <button class="action-btn" id="getLocation">Get Location</button>
+    <div id="geoLocation" class="geo-location"></div>
+  </div>
+
+  <div class="camera-container">
+    <button class="action-btn" id="activateCamera">Start Camera</button>
+    <button class="action-btn" id="deactivateCamera" disabled>Stop Camera</button>
+    <video id="videoFeed" autoplay class="video-preview"></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
